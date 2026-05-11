@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.05">
+    <circle cx="40" cy="40" r="15"/>
+    <circle cx="160" cy="160" r="20"/>
+    <rect x="130" y="30" width="20" height="20" transform="rotate(45 140 40)"/>
+    <path d="M 20 180 Q 40 150 60 180"/>
+    <path d="M 180 20 Q 150 40 180 60"/>
+    <line x1="80" y1="80" x2="100" y2="100"/>
+    <line x1="100" y1="80" x2="80" y2="100"/>
+    <polygon points="100,20 105,35 120,35 110,45 115,60 100,50 85,60 90,45 80,35 95,35"/>
+    <polygon points="40,100 45,110 55,100 45,90" />
+    <path d="M 10 10 L 30 30 M 170 170 L 190 190"/>
+    <circle cx="150" cy="100" r="5"/>
+    <circle cx="50" cy="140" r="8"/>
+  </g>
+</svg>

@@ -1,0 +1,150 @@
+/* Düz siyah yerine WhatsApp Dark vari lacivert-siyahımsı arka plan */
+QWidget {
+    color: #E9EDEF;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+QSplitter::handle {
+    background-color: #222E35;
+    width: 1px;
+}
+
+/* Sidebar Alanı */
+QWidget#Sidebar {
+    background-color: #111B21;
+}
+QWidget#SidebarHeader {
+    background-color: #202C33;
+}
+QListWidget {
+    background-color: #111B21;
+    border: none;
+    outline: none;
+}
+QListWidget::item {
+    border-bottom: 1px solid #202C33;
+    padding: 0px; 
+}
+QListWidget::item:hover {
+    background-color: #202C33;
+}
+QListWidget::item:selected {
+    background-color: #2A3942;
+}
+
+/* Arama Kutusu ve Text Girişleri (Daha yuvarlak yapıldı) */
+QLineEdit {
+    background-color: #202C33;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: #E9EDEF;
+    font-size: 14px;
+}
+QLineEdit:focus {
+    background-color: #2A3942;
+}
+
+/* QLineEdit ID eşleşmesi için */
+QLineEdit#SearchBar {
+    margin: 8px 12px;
+}
+
+/* İkon Butonlar (Daha Yuvarlak) */
+QPushButton.IconButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    color: #AEBAC1;
+    font-size: 20px;
+    padding: 5px;
+}
+QPushButton.IconButton:hover {
+    background-color: #374248;
+}
+
+/* Tüm Dialog ve MessageBoxlar (Pop-uplar görünürlük/yuvarlatma için düzeltmesi) */
+QDialog {
+    background-color: #111B21;
+}
+QMessageBox {
+    background-color: #202C33;
+}
+QMessageBox QLabel {
+    color: #E9EDEF;
+    font-size: 14px;
+    background-color: transparent;
+}
+QMessageBox QPushButton {
+    background-color: #008f6f;
+    color: white;
+    border-radius: 12px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+QMessageBox QPushButton:hover {
+    background-color: #00A884;
+}
+
+/* Sohbet Arka Planı (Şekilli/Geçişli) */
+QWidget#ChatArea {
+    /* Zarif bir arka plan radial gradient, arkaplan dolgun görünsün */
+    background: qradialgradient(cx:0.5, cy:0.5, radius: 1.0, 
+                fx:0.5, fy:0.5, stop:0 #1a2732, stop:1 #0b141a);
+}
+
+/* ScrollArea saydam olmalı ki arkadaki gradient gözüksün */
+QScrollArea {
+    background-color: transparent;
+    border: none;
+}
+QScrollArea > QWidget > QWidget {
+    background-color: transparent;
+}
+
+/* Üst Bar */
+QWidget#ChatHeader {
+    background-color: #202C33;
+    border-bottom: 1px solid #222E35;
+}
+
+/* Mesaj Giriş Alanı - Daha şık ve dolgun görünüm */
+QWidget#ChatInputArea {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #25333C, stop:1 #1A242B);
+    border-top: 1px solid #3A4A54;
+}
+QTextEdit#MessageInput {
+    background-color: #111B21;
+    border: 1px solid #3A4A54;
+    border-radius: 20px; 
+    padding: 10px 15px;
+    color: #E9EDEF;
+    font-size: 15px;
+}
+QPushButton#SendBtn {
+    background-color: #00A884;
+    border-radius: 20px; 
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+QPushButton#SendBtn:hover {
+    background-color: #029676;
+}
+
+/* Scrollbar Zarifleştirme */
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 6px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #374045;
+    min-height: 20px;
+    border-radius: 3px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}
