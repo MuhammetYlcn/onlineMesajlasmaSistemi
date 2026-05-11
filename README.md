@@ -1,4 +1,4 @@
-# 🚀 UniSwap Messaging App
+# 🚀 Messaging App
 
 Modern, nesne yönelimli (OOP) ve katmanlı mimari (DAO, Service, Model) prensiplerine sadık kalınarak Python ile geliştirilmiş, güvenli masaüstü anlık mesajlaşma uygulaması. Sunucu-İstemci (Client-Server) modeliyle çalışan proje, ham TCP soketleri ve PyQt6 arayüzü ile WhatsApp/Telegram benzeri pürüzsüz bir deneyim sunar.
 
